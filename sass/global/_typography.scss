@@ -1,0 +1,15 @@
+@use '../utils/' as u;
+
+//Base Reset
+*,
+::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//Pour tous les liens
+a{
+    text-decoration: none;
+    color: var(--blackColor);
+}

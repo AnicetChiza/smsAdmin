@@ -1,0 +1,9 @@
+@use '../utils/' as u;
+
+//Pour le body de notre Dashboard et ses branches
+body{
+    width: 100%;
+    font-size: 16px;
+    font-family: u.$font-sen;
+    background-color: var(--gray);
+}
