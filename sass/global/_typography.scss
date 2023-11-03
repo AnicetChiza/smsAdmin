@@ -13,3 +13,22 @@ a{
     text-decoration: none;
     color: var(--blackColor);
 }
+
+//Pour le boutton de notre nav
+nav{
+    button{
+        border: none;
+        outline: none;
+        margin-left: 30px;
+        margin-top: 230px;
+        padding: 12px 20px;
+        border-radius: 20px;
+        font-weight: bolder;
+        background-color: var(--bodyBackground);
+        box-shadow: 0px 0px 3px 0px var(--blackColor);
+        margin-top: 230px;
+        a{
+            font-family: u.$font-sen;
+        }
+    }
+}

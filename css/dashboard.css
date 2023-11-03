@@ -1,9 +1,9 @@
 :root {
-  --skyblue: #bcd9e7;
+  --skyBlue: #bcd9e7;
   --gray: #c4c4c4;
   --blending_blue: #0075df;
   --bluehover: #94bfe9;
-  --principalcolor: #f5f5f5;
+  --bodyBackground: #f5f5f5;
   --principalcoloropacity:#d4e2efa2;
   --blueColor: #407c87;
   --blackColor: #000;
@@ -14,7 +14,40 @@ body {
   width: 100%;
   font-size: 16px;
   font-family: "Sen", sans-serif;
-  background-color: var(--gray);
+  background-color: var(--bodyBackground);
+}
+
+section {
+  display: grid;
+  grid-template-columns: 20% 1fr;
+}
+section nav {
+  height: 100vh;
+  background-color: var(--skyBlue);
+  box-shadow: 0px 0px 3px 0px var(--blackColor);
+}
+section nav h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  color: var(--whiteColor);
+}
+section nav div {
+  padding: 10px;
+  margin-top: 8px;
+}
+section nav div i {
+  padding-left: 20px;
+}
+section nav div:hover {
+  padding: 10px;
+  box-shadow: 0px 0px 1px 0px var(--blackColor);
+  background-color: var(--bodyBackground);
+}
+section nav .page {
+  padding: 10px;
+  box-shadow: 0px 0px 1px 0px var(--blackColor);
+  background-color: var(--bodyBackground);
 }
 
 *,
@@ -27,4 +60,20 @@ body {
 a {
   text-decoration: none;
   color: var(--blackColor);
+}
+
+nav button {
+  border: none;
+  outline: none;
+  margin-left: 30px;
+  margin-top: 230px;
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-weight: bolder;
+  background-color: var(--bodyBackground);
+  box-shadow: 0px 0px 3px 0px var(--blackColor);
+  margin-top: 230px;
+}
+nav button a {
+  font-family: "Sen", sans-serif;
 }/*# sourceMappingURL=dashboard.css.map */

@@ -5,5 +5,39 @@ body{
     width: 100%;
     font-size: 16px;
     font-family: u.$font-sen;
-    background-color: var(--gray);
+    background-color: var(--bodyBackground);
+}
+
+//Section générale de notre Dashboard
+section{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    nav{
+        height: 100vh;
+        background-color: var(--skyBlue);
+        box-shadow: 0px 0px 3px 0px var(--blackColor);
+        h2{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding-left: 30px;
+            color: var(--whiteColor);
+        }
+        div{
+            padding: 10px;
+            margin-top: 8px;
+            i{
+                padding-left: 20px;
+            }
+            &:hover{
+                padding: 10px;
+                box-shadow: 0px 0px 1px 0px var(--blackColor);
+                background-color: var(--bodyBackground);    
+            }
+        }
+        .page{
+            padding: 10px;
+            box-shadow: 0px 0px 1px 0px var(--blackColor);
+            background-color: var(--bodyBackground);
+        }
+    }
 }
