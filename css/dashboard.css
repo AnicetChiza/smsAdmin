@@ -78,7 +78,7 @@ nav button a {
 }
 
 header {
-  padding: 15px;
+  padding: 10px 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -111,4 +111,9 @@ header .user-information p img {
   height: 30px;
   border-radius: 50%;
   border: 2px solid var(--gray);
+}
+header .add {
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 3px 0px var(--blackColor);
 }/*# sourceMappingURL=dashboard.css.map */

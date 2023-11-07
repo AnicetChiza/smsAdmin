@@ -35,7 +35,7 @@ nav{
 
 //Cette partie contient notre Header
 header{
-    padding: 15px;
+    padding: 10px 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -69,5 +69,10 @@ header{
                 border: 2px solid var(--gray);
             }
         }
+    }
+    .add{
+        padding: 10px 20px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 3px 0px var(--blackColor);
     }
 }
