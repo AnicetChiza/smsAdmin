@@ -83,8 +83,8 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--whiteColor);
-  box-shadow: 0px 0px 3px 0px var(--blackColor);
+  background-color: var(--bodyBackground);
+  box-shadow: 1px 0px 2px var(--blackColor);
 }
 header .input-recherche {
   display: flex;
@@ -99,6 +99,7 @@ header .input-recherche input {
   border: none;
   outline: none;
   font-family: "Sen", sans-serif;
+  background: none;
 }
 header .user-information {
   display: flex;
