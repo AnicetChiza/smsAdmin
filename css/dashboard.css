@@ -84,6 +84,7 @@ header {
   align-items: center;
   justify-content: space-between;
   background-color: var(--whiteColor);
+  box-shadow: 0px 0px 3px 0px var(--blackColor);
 }
 header .input-recherche {
   display: flex;
@@ -91,6 +92,7 @@ header .input-recherche {
   align-items: center;
   gap: 5px;
   padding: 10px;
+  border-radius: 4px;
   box-shadow: 0px 0px 3px 0px var(--blackColor);
 }
 header .input-recherche input {
@@ -102,5 +104,11 @@ header .user-information {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
+}
+header .user-information p img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid var(--gray);
 }/*# sourceMappingURL=dashboard.css.map */

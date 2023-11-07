@@ -41,12 +41,14 @@ header{
     align-items: center;
     justify-content: space-between;
     background-color: var(--whiteColor);
+    box-shadow: 0px 0px 3px 0px var(--blackColor);
     .input-recherche{
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 5px;
         padding: 10px;
+        border-radius: 4px;
         box-shadow: 0px 0px 3px 0px var(--blackColor);
         input{
             border: none;
@@ -58,6 +60,14 @@ header{
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 5px;
+        gap: 10px;
+        p{
+            img{
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 2px solid var(--gray);
+            }
+        }
     }
 }
