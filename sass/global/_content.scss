@@ -2,65 +2,60 @@
 @use '../utils/mixins' as *;
 
 .progress-bar-highchart{
+    margin-top: 20px;
+    @keyframes progress {
+        0% {
+          stroke-dasharray: 0 100;
+        }
+    }
+    .circle-svg {
+        display: block;
+        min-height: 50%;
+        margin-top: 10px;
+    }
+    .circle-svg text {
+        text-align: center;
+        color: var(--blackColor);
+        font-size: 8px;
+    }
+    .circle-svg path.percent {
+        stroke: var(--blackColor);
+        fill: none; 
+        stroke-width: 2.8; 
+        stroke-linecap: round;
+        animation: progress 1s ease-out forwards;
+    }
+    .circle-svg path.around {
+        stroke: var(--gray);
+        fill: none;
+        stroke-width: 2.8; 
+    }
     .progress-bar-content{
-        @keyframes progress {
-            0% {
-              stroke-dasharray: 0 100;
-            }
-        }
-        .circle-svg {
-            display: block;
-            min-height: 50%;
-            margin-top: 10px;
-        }
-        .circle-svg text {
-            text-align: center;
-            color: var(--blackColor);
-            font-size: 8px;
-        }
-        .circle-svg path.percent {
-            stroke: var(--blackColor);
-            fill: none; 
-            stroke-width: 2.8; 
-            stroke-linecap: round;
-            animation: progress 1s ease-out forwards;
-        }
-        .circle-svg path.around {
-            stroke: var(--gray);
-            fill: none;
-            stroke-width: 2.8; 
-        }
-        .bloc-right-blocs-sublocs2{
-            display: grid;
-            grid-template-columns: 48% 50%;
-            margin-top: 20px;
-            column-gap: 20px;
-        }
-        .first_item{
-            padding: 15px;
-            border-radius: 5px;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
-            gap: 40px;
-            background-color: var(--whiteColor);
-            box-shadow: 0px 0px 2px 0px var(--gray);
+        padding: 15px;
+        border-radius: 5px;
+        @include vertical-alignment;
+        justify-content: space-around;
+        gap: 40px;
+        background-color: var(--whiteColor);
+        box-shadow: 0px 0px 3px 0px var(--blackColor);
+        .progress-point{
             .first, .second, .third{
                 padding-top: 20px;
-                @include display_flex;
+                gap: 5px;
+                align-items: normal;
+                @include vertical-alignment;
             }
-            .progress_point .item1 h5{
+            .first h5{
                 @include progress_circle;
                 background-color: var(--skyBlue);
             }
-            .progress_point .item2 h5{
+            .second h5{
                 @include progress_circle;
                 background-color: var(--blackColor);
             }
-            .progress_point .item3 h5{
+            .third h5{
                 @include progress_circle;
-                background-color: var(--principalcolor);
+                background-color: var(--skyBlue);
             }
         }
     }
