@@ -1,4 +1,5 @@
 @use '../utils/' as u;
+@use '../utils/mixins' as *;
 
 //Base Reset
 *,
@@ -36,19 +37,16 @@ nav{
 //Cette partie contient notre Header
 header{
     padding: 10px 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @include vertical-alignment;
     justify-content: space-between;
     background-color: var(--bodyBackground);
     box-shadow: 1px 0px 2px var(--blackColor);
     .input-recherche{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
         gap: 5px;
         padding: 10px;
         border-radius: 4px;
+        @include vertical-alignment;
+        -webkit-column-gap: 5px;
         box-shadow: 0px 0px 3px 0px var(--blackColor);
         input{
             border: none;
@@ -58,10 +56,9 @@ header{
         }
     }
     .user-information{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        @include vertical-alignment;
         gap: 10px;
+        -webkit-column-gap: 10px;
         p{
             img{
                 width: 30px;

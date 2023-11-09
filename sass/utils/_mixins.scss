@@ -1,0 +1,6 @@
+//Centre verticalement
+@mixin vertical-alignment{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

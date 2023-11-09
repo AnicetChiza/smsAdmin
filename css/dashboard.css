@@ -65,13 +65,13 @@ section nav .page {
   box-shadow: 0px 0px 3px 0px var(--blackColor);
 }
 .dashboard-content .dashboard-items .items div {
-  border-left: 4px solid var(--bodyBackground);
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 25px;
-  padding-bottom: 20px;
   padding-left: 8px;
+  padding-bottom: 20px;
+  border-left: 4px solid var(--bodyBackground);
 }
 .dashboard-content .dashboard-items .items p {
   padding-left: 15px;
@@ -115,12 +115,13 @@ header {
   box-shadow: 1px 0px 2px var(--blackColor);
 }
 header .input-recherche {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   gap: 5px;
   padding: 10px;
   border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -webkit-column-gap: 5px;
   box-shadow: 0px 0px 3px 0px var(--blackColor);
 }
 header .input-recherche input {
@@ -134,6 +135,7 @@ header .user-information {
   flex-direction: row;
   align-items: center;
   gap: 10px;
+  -webkit-column-gap: 10px;
 }
 header .user-information p img {
   width: 30px;
