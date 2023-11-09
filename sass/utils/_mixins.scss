@@ -4,3 +4,10 @@
     flex-direction: row;
     align-items: center;
 }
+
+//Progress circle bar
+@mixin progress_circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
