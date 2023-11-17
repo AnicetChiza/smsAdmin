@@ -2,7 +2,10 @@
 @use '../utils/mixins' as *;
 
 .progress-bar-highchart{
-    margin-top: 20px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 48% 50%;
+    column-gap: 18px;
     @keyframes progress {
         0% {
           stroke-dasharray: 0 100;
@@ -58,5 +61,11 @@
                 background-color: var(--skyBlue);
             }
         }
+    }
+    //Pour le highchart
+    #highcharts{
+        height: 250px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 3px 0px var(--blackColor);
     }
 }
