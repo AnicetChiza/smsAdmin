@@ -88,3 +88,35 @@ header{
         border-left: 2px solid var(--blackColor);
     }
 }
+
+//Here we're going to work on formulaire of all page
+main{
+    width: 100%;
+    height: 100vh;
+    @include vertical-alignment;
+    justify-content: center;
+
+    .formulaire{
+        width: 40%;
+        border-radius: 10px;
+        padding: 20px 40px;
+        box-shadow: 0px 0px 5px 0px var(--blackColor);
+
+        div{
+            display: grid;
+            margin-top: 10px;
+            gap: 10px;
+            -webkit-column-gap: 10px;
+
+            input, select{
+                @include input-properties;
+            }
+
+        }
+        button{
+            float: right;
+            margin-top: 15px;
+            @include input-properties;
+        }
+    }
+}
