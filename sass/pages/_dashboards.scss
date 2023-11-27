@@ -1,0 +1,19 @@
+@use '../utils/' as u;
+@use '../utils/mixins' as *;
+
+table{
+    width: 100%;
+    margin: auto;
+    margin-top: 15px;
+    border-collapse: collapse;
+
+    thead{
+        text-align: left;
+    }
+    th,td{
+        padding: 5px;
+    }
+    thead,tbody tr:nth-child(even){
+        background-color: var(--gray);
+    }
+}
