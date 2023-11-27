@@ -1,0 +1,50 @@
+@use '../utils/' as u;
+@use '../utils/mixins' as *;
+
+.dashboard-content{
+    .title-container{
+        @include vertical-alignment;
+        justify-content: space-between;
+
+        div{
+            gap: 5px;
+            -webkit-column-gap: 5px;
+            @include vertical-alignment;
+
+            p{
+                color: var(--gray);
+            }
+        }
+    }
+
+    .school-items{
+        padding: 10px;
+        margin-top: 15px;
+        border-radius: 5px;
+        background-color: var(--whiteColor);
+        box-shadow: 0px 0px 1px 0px var(--blackColor);
+
+        .active{
+            gap: 5px;
+            -webkit-column-gap: 5px;
+            justify-content: flex-end;
+            @include vertical-alignment;
+
+            h5{
+                color: var(--gray);
+            }
+
+            p{
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: var(--green);
+            }
+        }
+
+        .items{
+            @include vertical-alignment;
+            justify-content: space-between;
+        }
+    }
+}

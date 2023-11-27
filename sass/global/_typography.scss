@@ -74,3 +74,17 @@ header{
         box-shadow: 0px 0px 3px 0px var(--blackColor);
     }
 }
+
+//Modify and delete buttons for all the pages that we have in our Dashboard
+.modify-delete{
+    gap: 5px;
+    @include vertical-alignment;
+
+    .modify{
+        color: var(--redColor);
+    }
+    p{
+        height: 20px;
+        border-left: 2px solid var(--blackColor);
+    }
+}

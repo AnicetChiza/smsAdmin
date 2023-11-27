@@ -8,6 +8,7 @@
   --blueColor: #407c87;
   --blackColor: #000;
   --whiteColor: #fff;
+  --green: #0b6a3c;
 }
 
 .progress-bar-highchart {
@@ -99,7 +100,6 @@ section {
   grid-template-columns: 20% 1fr;
 }
 section nav {
-  height: 100vh;
   background-color: var(--skyBlue);
   box-shadow: 0px 0px 3px 0px var(--blackColor);
 }
@@ -225,6 +225,20 @@ header .add {
   box-shadow: 0px 0px 3px 0px var(--blackColor);
 }
 
+.modify-delete {
+  gap: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.modify-delete .modify {
+  color: var(--redColor);
+}
+.modify-delete p {
+  height: 20px;
+  border-left: 2px solid var(--blackColor);
+}
+
 .dashboard-content {
   padding: 20px 20px;
 }
@@ -239,16 +253,50 @@ header .add {
   background-color: var(--whiteColor);
   box-shadow: 0px 0px 1px 0px var(--blackColor);
 }
-.dashboard-content .container-items .modify-delete {
+
+.dashboard-content .title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.dashboard-content .title-container div {
   gap: 5px;
+  -webkit-column-gap: 5px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-.dashboard-content .container-items .modify-delete .modify {
-  color: var(--redColor);
+.dashboard-content .title-container div p {
+  color: var(--gray);
 }
-.dashboard-content .container-items .modify-delete p {
-  height: 20px;
-  border-left: 2px solid var(--blackColor);
+.dashboard-content .school-items {
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  background-color: var(--whiteColor);
+  box-shadow: 0px 0px 1px 0px var(--blackColor);
+}
+.dashboard-content .school-items .active {
+  gap: 5px;
+  -webkit-column-gap: 5px;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.dashboard-content .school-items .active h5 {
+  color: var(--gray);
+}
+.dashboard-content .school-items .active p {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--green);
+}
+.dashboard-content .school-items .items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }/*# sourceMappingURL=dashboard.css.map */
