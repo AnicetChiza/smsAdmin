@@ -108,7 +108,7 @@ main{
             gap: 10px;
             -webkit-column-gap: 10px;
 
-            input, select{
+            input, select, textarea{
                 @include input-properties;
             }
 

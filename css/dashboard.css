@@ -259,7 +259,7 @@ main .formulaire div {
   gap: 10px;
   -webkit-column-gap: 10px;
 }
-main .formulaire div input, main .formulaire div select {
+main .formulaire div input, main .formulaire div select, main .formulaire div textarea {
   border: none;
   outline: none;
   padding: 8px 12px;
