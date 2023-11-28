@@ -280,6 +280,13 @@ main .formulaire button {
   box-shadow: 0px 0px 2px 0px var(--blackColor);
 }
 
+@media screen and (max-width: 768px) and (max-width: 610px) {
+  .container .container-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+  }
+}
 @media (max-width: 978px) {
   section {
     display: grid;
@@ -293,16 +300,17 @@ main .formulaire button {
     overflow-x: hidden;
   }
 }
-.dashboard-content {
-  padding: 20px 20px;
+@media screen and (max-width: 768px) and (max-width: 610px) {
+  .dashboard-content .school-items .items {
+    display: grid;
+  }
 }
-.dashboard-content .container-items {
+.container-items {
   padding: 20px;
   margin-top: 15px;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
   background-color: var(--whiteColor);
   box-shadow: 0px 0px 1px 0px var(--blackColor);
@@ -367,7 +375,6 @@ table thead, table tbody tr:nth-child(even) {
 .dashboard-content .school-items .items {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
 }
 

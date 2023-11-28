@@ -1,2 +1,14 @@
 @use '../utils/' as u;
 @use '../utils/mixins' as *;
+
+@include u.breakpoint(tablet){
+    @media screen and (max-width: 610px){
+        .container{
+            .container-items{
+                display: flex;
+                flex-direction: column;
+                justify-content: initial;
+            }
+        }
+    }
+}

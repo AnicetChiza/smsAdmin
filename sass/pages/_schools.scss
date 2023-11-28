@@ -43,7 +43,8 @@
         }
 
         .items{
-            @include vertical-alignment;
+            display: flex;
+            flex-direction: row;
             justify-content: space-between;
         }
     }

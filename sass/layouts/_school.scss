@@ -1,0 +1,15 @@
+@use '../utils/' as u;
+@use '../utils/mixins' as *;
+
+@include u.breakpoint(tablet){
+    @media screen and (max-width: 610px){
+        .dashboard-content{
+            .school-items{
+                .items{
+                    display: grid;
+                    //justify-content: space-between;
+                }
+            }
+        }
+    }
+}

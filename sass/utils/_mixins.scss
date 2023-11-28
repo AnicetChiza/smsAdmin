@@ -24,7 +24,8 @@
     box-shadow: 0px 0px 2px 0px var(--blackColor);
 }
 
-//Button properties
-@mixin button-properties{
-    
+//Grid alignment
+@mixin grid-alignment{
+    display: grid;
+    gap: 10px;
 }
