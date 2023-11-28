@@ -130,7 +130,6 @@ section nav .page {
   padding: 20px 20px;
   height: 100vh;
   overflow-x: auto;
-  margin-top: 50px;
 }
 .dashboard-content .dashboard-items {
   display: grid;
