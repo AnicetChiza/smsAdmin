@@ -1,0 +1,17 @@
+@use '../utils/' as u;
+@use '../utils/mixins' as *;
+
+@include u.breakpoint(laptop){
+    section{
+        display: grid;
+        grid-template-columns: auto;
+        nav{
+            display: none;
+        }
+
+        .dashboard-content{
+            height: auto;
+            overflow-x: hidden;
+        }
+    }
+}

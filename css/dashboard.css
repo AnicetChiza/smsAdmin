@@ -280,6 +280,19 @@ main .formulaire button {
   box-shadow: 0px 0px 2px 0px var(--blackColor);
 }
 
+@media (max-width: 978px) {
+  section {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  section nav {
+    display: none;
+  }
+  section .dashboard-content {
+    height: auto;
+    overflow-x: hidden;
+  }
+}
 .dashboard-content {
   padding: 20px 20px;
 }
