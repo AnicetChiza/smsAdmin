@@ -6,8 +6,9 @@
         .dashboard-content{
             .school-items{
                 .items{
-                    display: grid;
-                    //justify-content: space-between;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: initial;    
                 }
             }
         }
