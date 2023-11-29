@@ -3,6 +3,14 @@
 
 @include u.breakpoint(tablet){
     @media screen and (max-width: 610px){
+        .dashboard-content{
+            padding: 10px;
+        }
+
+        header{
+            padding: 10px;
+        }
+
         .container{
             .container-items{
                 display: flex;

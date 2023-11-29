@@ -2,6 +2,13 @@
 @use '../utils/mixins' as *;
 
 @include u.breakpoint(laptop){
+
+    //This part concerne the formaulaire Media query
+    main{
+        .formulaire{
+            width: 70%;
+        }
+    }
     section{
         display: grid;
         grid-template-columns: auto;
@@ -12,6 +19,15 @@
         .dashboard-content{
             height: auto;
             overflow-x: hidden;
+        }
+    }
+}
+
+@include u.breakpoint(mobile){
+    main{
+        padding: 15px;
+        .formulaire{
+            width: 100%;
         }
     }
 }
