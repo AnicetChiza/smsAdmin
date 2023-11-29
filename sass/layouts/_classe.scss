@@ -1,6 +1,33 @@
 @use '../utils/' as u;
 @use '../utils/mixins' as *;
 
+
+//--------------------------------------------//
+    //---------MEDIA QUERY HEADER----------//
+//--------------------------------------------//
+@include u.breakpoint(laptop){
+    .menu{
+        display: initial;
+        .menu-icons .icon{
+            display: block;
+            cursor: pointer;
+        }
+        .menu-icons .exit{
+            display: none;
+            cursor: pointer;
+        }
+        .menu-mobile .icon{
+            display: none;
+        }
+        .menu-mobile .exit{
+            display: initial;
+        }
+        .menu-mobile{
+            margin-top: 0;
+         }
+    }
+}
+
 @include u.breakpoint(tablet){
     @media screen and (max-width: 610px){
         .dashboard-content{

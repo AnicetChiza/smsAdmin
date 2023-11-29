@@ -312,6 +312,28 @@ main .formulaire button {
   box-shadow: 0px 0px 2px 0px var(--blackColor);
 }
 
+@media (max-width: 978px) {
+  .menu {
+    display: initial;
+  }
+  .menu .menu-icons .icon {
+    display: block;
+    cursor: pointer;
+  }
+  .menu .menu-icons .exit {
+    display: none;
+    cursor: pointer;
+  }
+  .menu .menu-mobile .icon {
+    display: none;
+  }
+  .menu .menu-mobile .exit {
+    display: initial;
+  }
+  .menu .menu-mobile {
+    margin-top: 0;
+  }
+}
 @media screen and (max-width: 768px) and (max-width: 610px) {
   .dashboard-content {
     padding: 10px;
