@@ -57,10 +57,11 @@
         }
     }
 
-    .header-content{
-        display: flex;
-        flex-direction: column;
-        
+    header{
+        .header-content{
+            display: flex;
+            flex-direction: column;
+        }
         .user-information{
             margin-top: 10px;
             align-self: flex-end;

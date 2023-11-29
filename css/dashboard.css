@@ -232,10 +232,20 @@ header {
   box-shadow: 1px 0px 2px var(--blackColor);
 }
 header .header-content {
+  width: 100%;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-header .input-recherche {
+header .menu-search-area {
+  gap: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  -webkit-column-gap: 5px;
+}
+header .menu-search-area .input-recherche {
+  width: 100%;
   gap: 5px;
   padding: 10px;
   border-radius: 4px;
@@ -245,25 +255,18 @@ header .input-recherche {
   -webkit-column-gap: 5px;
   box-shadow: 0px 0px 3px 0px var(--blackColor);
 }
-header .input-recherche input {
+header .menu-search-area .input-recherche input {
   border: none;
   outline: none;
   font-family: "Sen", sans-serif;
   background: none;
 }
-header .menu-search-area {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-  align-items: center;
-  -webkit-column-gap: 5px;
-}
 header .user-information {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 10px;
-  -webkit-column-gap: 10px;
+  gap: 5px;
+  -webkit-column-gap: 5px;
 }
 header .user-information p img {
   width: 30px;
@@ -403,11 +406,11 @@ main .formulaire button {
   main .formulaire {
     width: 100%;
   }
-  .header-content {
+  header .header-content {
     display: flex;
     flex-direction: column;
   }
-  .header-content .user-information {
+  header .user-information {
     margin-top: 10px;
     align-self: flex-end;
   }
