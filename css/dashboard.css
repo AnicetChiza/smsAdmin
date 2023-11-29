@@ -105,7 +105,7 @@
   margin-top: -200%;
   display: flex;
   flex-direction: row;
-  background-color: var(--whiteColor);
+  background-color: var(--bodyBackground);
 }
 .menu .menu-container ul {
   width: 100%;
@@ -117,8 +117,15 @@
   text-align: center;
   padding: 15px;
 }
-.menu .menu-container ul li a {
-  text-decoration: none;
+.menu .menu-container ul .sedeconnecter {
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px;
+  font-weight: bolder;
+  font-family: "Sen", sans-serif;
+  background-color: var(--skyBlue);
 }
 
 body {
@@ -216,7 +223,7 @@ nav button a {
   font-family: "Sen", sans-serif;
 }
 
-header {
+header, .header-content {
   padding: 10px 20px;
   display: flex;
   flex-direction: row;
@@ -224,7 +231,7 @@ header {
   background-color: var(--bodyBackground);
   box-shadow: 1px 0px 2px var(--blackColor);
 }
-header .input-recherche {
+header .input-recherche, .header-content .input-recherche {
   gap: 5px;
   padding: 10px;
   border-radius: 4px;
@@ -234,26 +241,26 @@ header .input-recherche {
   -webkit-column-gap: 5px;
   box-shadow: 0px 0px 3px 0px var(--blackColor);
 }
-header .input-recherche input {
+header .input-recherche input, .header-content .input-recherche input {
   border: none;
   outline: none;
   font-family: "Sen", sans-serif;
   background: none;
 }
-header .user-information {
+header .user-information, .header-content .user-information {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
   -webkit-column-gap: 10px;
 }
-header .user-information p img {
+header .user-information p img, .header-content .user-information p img {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   border: 2px solid var(--gray);
 }
-header .add {
+header .add, .header-content .add {
   padding: 10px 20px;
   border-radius: 20px;
   box-shadow: 0px 0px 3px 0px var(--blackColor);
@@ -385,11 +392,11 @@ main .formulaire button {
   main .formulaire {
     width: 100%;
   }
-  header {
+  .header-content {
     display: flex;
     flex-direction: column;
   }
-  header .user-information {
+  .header-content .user-information {
     margin-top: 10px;
     align-self: flex-end;
   }
