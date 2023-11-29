@@ -37,7 +37,8 @@ nav{
 //Cette partie contient notre Header
 header{
     padding: 10px 20px;
-    @include vertical-alignment;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     background-color: var(--bodyBackground);
     box-shadow: 1px 0px 2px var(--blackColor);

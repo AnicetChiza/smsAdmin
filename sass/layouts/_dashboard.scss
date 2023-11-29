@@ -24,13 +24,24 @@
 
     @media screen and (max-width: 800px){
         .progress-bar-highchart{
-            grid-template-columns: 99.5%;
+            grid-template-columns: 99.2%;
         }
 
         .dashboard-content{
             .dashboard-items{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}
+
+@include u.breakpoint(tablet){
+    @media screen and (max-width: 650px){
+        table{
+            thead th, tbody tr{
+                display: flex;
+                flex-direction: column;
             }
         }
     }
@@ -43,6 +54,32 @@
         padding: 15px;
         .formulaire{
             width: 100%;
+        }
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        
+        .user-information{
+            margin-top: 10px;
+            align-self: flex-end;
+        }
+    }
+
+    .dashboard-content{
+        .dashboard-items{
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .progress-bar-highchart{
+        .highcharts{
+            overflow-y: auto;
+            #highcharts{
+                width: 200%;
+            }
         }
     }
 }

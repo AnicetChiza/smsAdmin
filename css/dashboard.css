@@ -187,7 +187,6 @@ header {
   padding: 10px 20px;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
   background-color: var(--bodyBackground);
   box-shadow: 1px 0px 2px var(--blackColor);
@@ -311,11 +310,17 @@ main .formulaire button {
 }
 @media screen and (max-width: 978px) and (max-width: 800px) {
   .progress-bar-highchart {
-    grid-template-columns: 99.5%;
+    grid-template-columns: 99.2%;
   }
   .dashboard-content .dashboard-items {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 768px) and (max-width: 650px) {
+  table thead th, table tbody tr {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (max-width: 480px) {
@@ -324,6 +329,24 @@ main .formulaire button {
   }
   main .formulaire {
     width: 100%;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+  }
+  header .user-information {
+    margin-top: 10px;
+    align-self: flex-end;
+  }
+  .dashboard-content .dashboard-items {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .progress-bar-highchart .highcharts {
+    overflow-y: auto;
+  }
+  .progress-bar-highchart .highcharts #highcharts {
+    width: 200%;
   }
 }
 .container-items {
