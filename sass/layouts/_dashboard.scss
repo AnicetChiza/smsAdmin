@@ -21,9 +21,24 @@
             overflow-x: hidden;
         }
     }
+
+    @media screen and (max-width: 800px){
+        .progress-bar-highchart{
+            grid-template-columns: 99.5%;
+        }
+
+        .dashboard-content{
+            .dashboard-items{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
 }
 
+
 @include u.breakpoint(mobile){
+    //This part concerne the formaulaire Media query
     main{
         padding: 15px;
         .formulaire{

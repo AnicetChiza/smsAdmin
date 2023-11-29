@@ -13,10 +13,10 @@
 
 .progress-bar-highchart {
   margin-top: 10px;
+  width: 100%;
   display: grid;
-  grid-template-columns: 48% 50%;
-  -moz-column-gap: 18px;
-       column-gap: 18px;
+  grid-template-columns: 49% 49%;
+  gap: 2%;
 }
 @keyframes progress {
   0% {
@@ -307,6 +307,15 @@ main .formulaire button {
   section .dashboard-content {
     height: auto;
     overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 978px) and (max-width: 800px) {
+  .progress-bar-highchart {
+    grid-template-columns: 99.5%;
+  }
+  .dashboard-content .dashboard-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 480px) {
