@@ -35,13 +35,17 @@ nav{
 }
 
 //Cette partie contient notre Header
-header, .header-content{
+header{
     padding: 10px 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: var(--bodyBackground);
     box-shadow: 1px 0px 2px var(--blackColor);
+    .header-content{
+        flex-direction: row;
+        justify-content: space-between;
+    }
     .input-recherche{
         gap: 5px;
         padding: 10px;
@@ -55,6 +59,13 @@ header, .header-content{
             font-family: u.$font-sen;
             background: none;
         }
+    }
+    .menu-search-area{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+        -webkit-column-gap: 5px;
     }
     .user-information{
         @include vertical-alignment;
